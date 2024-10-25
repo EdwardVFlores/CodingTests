@@ -43,7 +43,7 @@ const scrapeShopifyStore = async (url: string) => {
 // API endpoint to get styles
 app.get('/scrape', async (req: Express.Request, res: Express.Response, next: NextFunction) => {
 
-  const ur = req.query.url as string;
+  const url = req.query.url as string;
 
   if (!url) {
     return res.status(400).json({ error: 'URL is required' });
