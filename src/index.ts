@@ -1,7 +1,6 @@
-import express, {Request, Response} from 'express';
+import express, {Request, Response, NextFunction} from 'express';
 import axios from 'axios';
 import cheerio from 'cheerio';
-import { NextFunction } from 'express';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
